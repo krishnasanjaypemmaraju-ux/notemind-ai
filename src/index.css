@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --color-navy-deep: #0A0E27;
+  --color-navy-card: #0D1130;
+  --color-gold: #C9A84C;
+  --color-cream: #F5F0E8;
+  
+  --font-sans: "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Playfair Display", serif;
+}
+
+@layer base {
+  body {
+    @apply bg-navy-deep text-cream font-sans;
+  }
+}
+
+.glass-card {
+  @apply bg-navy-card/50 backdrop-blur-md border border-gold/20 rounded-2xl;
+}
+
+.gold-glow {
+  box-shadow: 0 0 15px rgba(201, 168, 76, 0.3);
+}
+
+.gold-gradient-text {
+  @apply bg-gradient-to-r from-gold to-amber-200 bg-clip-text text-transparent;
+}

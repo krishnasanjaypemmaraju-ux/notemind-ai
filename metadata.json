@@ -1,0 +1,8 @@
+{
+  "name": "NoteMind AI",
+  "description": "An AI-powered notebook app for research, summaries, and mind mapping.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
